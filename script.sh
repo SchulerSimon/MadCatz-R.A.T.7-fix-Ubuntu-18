@@ -1,0 +1,10 @@
+sudo echo "Section \"InputClass\"
+	Identifier \"Mouse Remap\"
+	MatchProduct \"Mad Catz Mad Catz R.A.R.7 Mouse\"
+	MatchIsPointer \"true\"
+	MatchDevicePath \"/dev/input/event*\"
+	Option \"Buttons\" \"21\"
+	Option \"ButtonMapping\" \"1 2 3 4 5 6 7 0 9 10 11 12 0 0 0 16 17 18 19 20 21\"
+	Option \"ZAxisMapping\" \"4 5 6 7\"
+EndSecion" > /usr/share/X11/xorg.conf.d/10-madcatz.conf
+echo "Done!\nPlease reboot for the config to take effect"
